@@ -22,11 +22,11 @@ const getStatusAndDuration = (startTime, endTime) => {
   }
 
   if (now < start) {
-    return { status: 'Scheduled', duration: durationText }; // Shows duration
+    return { status: 'Scheduled', duration: durationText };
   }
   
   if (now >= start && now <= end) {
-    return { status: 'Active', duration: durationText }; // Shows duration
+    return { status: 'Active', duration: durationText }; 
   }
   
   if (now > end) {
